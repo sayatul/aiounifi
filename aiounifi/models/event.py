@@ -105,6 +105,9 @@ class EventKey(enum.Enum):
     HOT_SPOT_AUTHED_BY_PASSWORD = "EVT_HS_AuthedByPassword"
     HOT_SPOT_VOUCHER_USED = "EVT_HS_VoucherUsed"
 
+    TELEPORT_TOKEN_CREATED = "EVT_TELEPORT_TOKEN_CREATED"
+    TELEPORT_TOKEN_DELETED = "EVT_TELEPORT_TOKEN_DELETED"
+
     UNKNOWN = "unknown"
 
     @classmethod

@@ -22,6 +22,7 @@ from .interfaces.traffic_routes import TrafficRoutes
 from .interfaces.traffic_rules import TrafficRules
 from .interfaces.vouchers import Vouchers
 from .interfaces.wlans import Wlans
+from .interfaces.teleport import Teleport
 from .models.configuration import Configuration
 
 if TYPE_CHECKING:
@@ -54,6 +55,7 @@ class Controller:
         self.traffic_routes = TrafficRoutes(self)
         self.vouchers = Vouchers(self)
         self.wlans = Wlans(self)
+        self.teleport_tokens = Teleport(self)
 
     async def login(self) -> None:
         """Log in to controller."""

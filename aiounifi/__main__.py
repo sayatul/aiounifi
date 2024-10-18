@@ -99,6 +99,7 @@ async def main(
             controller.traffic_routes.update(),
             controller.vouchers.update(),
             controller.wlans.update(),
+            controller.teleport_tokens.update(),
         ),
         return_exceptions=True,
     )
